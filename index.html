@@ -4,16 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>生日快乐</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <style>
+       
+        /*===添加字体===*/
         @font-face {
             font-family: 'cute';
             src: url(fonts/shiyan.ttf)format('truetype');
             font-weight: normal;
             font-style: normal;
         }
+        
+        /*===背景颜色*/
+        body{
+            display: flex;
+            justify-content: center;    /* 水平居中 */
+            align-items: center;        /* 垂直居中 */
+            height: 100vh;              /* 占满视口高度 */
+            margin: 0;                  /* 去掉默认边距 */
+            background: linear-gradient(135deg, #fddfe1, #FCE4EC, #facfcf);
+        }
+
+        /*===按钮设计*/
+        body{
+        .open-btn{
+            font-family: 'cute';
+            margin: auto;
+            padding: 36px 96px;
+            font-size: 75px;
+            border-radius: 500px;
+            background: rgb;
+            transition: all 0.3s ease;
+        }
+        .open-btn:hover {
+            background: #e8a598;
+            color: #fff;
+            transform: scale(1.04);
+            box-shadow: 0 12px 32px rgba(232, 165, 152, 0.4);
+        }
+    }
     </style>
 </head>
 <body>
-    <h1 style="font-family: 'cute';">我的第一个网页🎉🎉🎉</h1>
+    <!--页面触发按钮-->
+    <button class="open-btn">打开祝福</button>
 </body>
 </html>
